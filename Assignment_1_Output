@@ -1,0 +1,31 @@
+#Answer 1
+Enter the first number:50
+Enter the second number:40
+Enter the third number:70
+The average of the three entered numbers is: 53.333333333333336
+
+#Answer 2
+Enter the gross income:300000
+Enter the number of dependents:5
+Taxable income: 275000.0
+Tax: 55000.0
+
+#Answer 3
+Enter the SID of the Student: 21102076
+Enter the Name of the Student: Abbhineet Mishra
+Enter the Gender of the Student(Use Gender values: F, M, U (For Unknown).): M
+Enter the Course Code of the Student: ES1101
+Enter the CGPA of the Student: 9.9
+['21102076', 'Abbhineet Mishra', 'M', 'ES1101', 9.9]
+
+#Answer 4
+Enter Marks of 1st Student: 70
+Enter Marks of 2nd Student: 50
+Enter Marks of 3rd Student: 65
+Enter Marks of 4th Student: 45
+Enter Marks of 5th Student: 53
+[45, 50, 53, 65, 70]
+
+#Answer 5
+['Red', 'Green', 'White', 'Black', 'Yellow']
+['Red', 'Green', 'White', 'Purple', 'Purple', 'Yellow']
