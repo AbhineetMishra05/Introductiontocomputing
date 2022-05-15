@@ -1,0 +1,46 @@
+#####Question 1#####
+Length of the String is: 35
+Reverse of the String is: egaugnal evitisnes esac a si nohtyP
+The replaced String is: Python is object oriented language
+Index of Substring 'a' is: 10
+String with removed white spaces: Pythonisacasesensitivelanguage
+#################### 
+
+#####Question 2#####
+Enter your Name:Abhineet Mishra
+Enter your SID:21102076
+Enter your department name:Civil
+Enter your CGPA:8.5
+ Hey, Abhineet Mishra Here! 
+ My SID is 21102076
+ I am from Civil department and my CGPA is 8.5
+####################
+
+#####Question 3#####
+a&b:  8
+a|b:  58
+a^b:  50
+Left shift a with 2 bits:  224
+Right shift a with 2 bits:  14
+Left shift b with 2 bits:  40
+Right shift b with 2 bits:  2
+####################
+
+#####Question 4#####
+Enter a string: My name is Abhineet
+The word 'name' is present in the string: 
+YES
+####################
+
+#####Question 5#####
+Enter the length of the first side of the triangle:10
+Enter the length of the second side of the triangle:15
+Enter the length of the third side of the triangle:30
+The triangle cannot be formed
+####################
+
+#####Question 6#####
+Enter the first number:10
+Enter the second number:15
+Number of bits needed to be flipped to convert ‘a’ to ‘b’: 2
+####################
