@@ -1,0 +1,52 @@
+############## Question 1 #############
+Input a number to convert it into its binary equivalent :12
+Its binary equivalent is : 1100
+############## Question 2 #############
+Enter a mathematical expression: 123*10
+The value of the expression is : 1230
+############## Question 3 #############
+Enter a number for calculations: 12
+a) 350
+b) 66.0
+Enter the radius:23
+c) 6647.610054996002
+Enter the value of a :10
+Enter the value of b :23
+d) 5.690859989641989
+Enter the value of y1 :12
+Enter the value of y2 :13
+Enter the value of x1 :12
+Enter the value of x2 :13
+e) 1.0
+############## Question 4 #############
+4.(a)
+0
+1
+2
+3
+4
+4.(b)
+3
+4
+5
+6
+7
+8
+9
+4.(c)
+4
+7
+10
+4.(d)
+15
+13
+11
+9
+7
+4.(e)
+############## Question 5 #############
+Enter number of carbon atoms in molecule:3
+Enter number of hydrogen atoms in molecule:2
+Enter number of oxygen atoms in molecule:3
+The molecular weight of the compound is 86.04617999999999
+############## END #############
