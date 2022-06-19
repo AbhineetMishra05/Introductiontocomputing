@@ -1,140 +1,169 @@
+print("################### Question 1 ##################")
 
 
-#question-1------------------------------------------------------------------------------------------------------------------
-print("ANS.1")
-string=input("Enter the string :")
-print(string[::-1])
+str=input("Enter the string to be reversed : ")
+end=len(str)-1
+str_rev=""
+for i in range(0,len(str)):
+        str_rev=str_rev+str[end]
+        end=end-1
+print("Reverse of the string is : ",str_rev)
+
+
+print("################### Question 2 ##################")
+
+print("Enter the range to check for divisibility")
+start=int(input("Enter the starting range: "))
+end=int(input("Enter the ending range: "))
+div=int(input("Enter the number from which we will check the divisibility: "))
+for i in range(start,end+1):
+    if(i%div==0):
+        print(i,end="")
+        print(",",end="")
+print("\b is divisible by ",div)
+
+
+print("################### Question 3 ##################")
  
-
-#question-2-------------------------------------------------------------------------------------------------------------------
-print("ANS.2")
-x=int(input("Enter the minimum value :"))
-y=int(input("Enter the maximum value: "))
-num=int(input("Enter the number for divisibility check :"))
-i=x
-while i<=y:
-    if i%num==0 :
-        print(i)
-    i+=1
-
-#question-3--------------------------------------------------------------------------------------------------------------------
-print("ANS.3")
-a=float(input("Enter the length of side:"))
-b=float(input("Enter the length of side:"))
-c=float(input("Enter the length of side:"))
-if a+b>c and a+c>b and b+c>a :
-    s=(a+b+c)/2
-    ar_tri=(s*(s-a)*(s-b)*(s-c))**(0.5)
-    print(ar_tri)
-else :
-    print("Error")
+import math
+print("Heron's Formula to calculate area of the triangle:")
+side_1=int(input("Enter the first side of the triangle: "))
+side_2=int(input("Enter the second side of the triangle: "))
+side_3=int(input("Enter the third side of the triangle: "))
+if(side_1+side_2>side_3 and side_1+side_3>side_2 and side_3+side_2>side_1 ):
+    s=(side_1+side_2+side_3)/2
+    area=math.sqrt(s*(s-side_1)*(s-side_2)*(s-side_3))
+    print("Area of the Triangle : ",area)
+else:
+    print("The following triangle cannot be formed.")
 
 
-#question-4--------------------------------------------------------------------------------------------------------------------
-print("ANS.4")
-n=int(input("Enter the no. of rows :"))
-t=(n//2)+1
-l=n//2
-for i in range(1,t+1):
-    for j in range(1,i+1):
+print("################### Question 4 ##################")
+
+n=1
+count=1
+while(n!=0):
+    m=n
+    while(m!=0):
         print("*",end="")
+        m=m-1
     print()
-for q in range(l,0,-1):
-    for r in range(q,0,-1):
-        print("*",end="")
-    print()
-
-
-#question-5---------------------------------------------------------------------------------------------------------------------
-print("ANS.5")
-row=int(input("Enter the number of rows"))
-n=0
-
-for i in range(0,row+1):
-      
-      for j in range(i): 
-            if n==26:
-                n=0 
-            else:
-                pass
-            y=chr(65+n) 
-            print(y, end="")
-            n+=1
-      print("")
-
-
-
-#question-6---------------------------------------------------------------------------------------------------------------------------------
-print("ANS.6")
-lower_value = int(input("Enter the Lowest Range Value : "))  
-upper_value = int(input("Enter the Upper Range Value : "))    # input from user the lowest and the upper range
-  
-print ("The Prime Numbers in this range are : ")  
-for number in range (lower_value, upper_value + 1):  
-    if number > 1:  
-        for i in range (2, number):                           # Check for each number if it has any factor between 1 and itself
-            if (number % i) == 0:                             # if YES, the code will move on
-                break       
-        else:  
-            print (number)                                    # if NO, the code prints the number
-
-
-
-
-#question-7---------------------------------------------------------------------------------------------------------------------------------
-print("ANS.7")
-accum=[]
-for i in range(1,500):
-    if i%7==0 and i%11==0 :
-        accum.append(i)
-print("The numbers divisible by 11 and are multiple of 7 are :",accum)        
-
-
-
-
-#question-8----------------------------------------------------------------------------------------------------------------------------------
-print("ANS.8")
-pos=[]
-neg=[]
-odd=[]
-even=[]
-times={}
-li=[]
-for i in range(10):
-    num=int(input("Enter the number "))
-    li.append(num)
-    if num>=0:
-        pos.append(num)
-    elif num<0 :
-        neg.append(num)
-    if num%2==0 :
-        even.append(num)
-    else :
-        odd.append(num)
-    if num not in times :
-            times[num]=1
+    if(count<5):
+        count+=1
+        n+=1
     else:
-        times[num]+=1
-print("Positive numbers are: ",pos)
-print("Negative numbers are: ",neg)
-print("Even numbers are: ",even)
-print("Odd numbers are: ",odd)
-print("Number of times each number occurs in the List",times)
+        n-=1
+
+print("################### Question 5 ##################")
+
+rows=int(input("Enter the number of rows :"))
+char=65
+for i in range(0,rows):
+    for j in range(0,i+1):
+        if(chr(char)=="Z"):
+            char=65
+        print(chr(char),end="")
+        char=char+1
+        if(chr(char)=="Z"):
+            char=65
+    print()
+
+
+print("################### Question 6 ##################")
+
+print("Program to show all the prime numbers in the user inputted range")
+start=int(input("Enter the starting range : "))
+end=int(input("Enter the ending range : "))
+for i in range(start,end+1):
+    count=0
+    for j in range(2,int(math.sqrt(i))+1):
+        if(i%j==0):
+            count=1
+    if(count==0):
+        print(i,end="")
+        print(",",end="")
+print("\b is a prime number.")
+
+
+
+print("################### Question 7 ##################")
+
+
+for i in range(1,501):
+    if(i%7==0 and i%11==0):
+        print(i,end="")
+        print(",",end="")
+print("\b is divisible by 7 as well as 11.")
+
+
+print("################### Question 8 ##################")
+
+
+print("Input 10 nos to check whether it is positive/negative ,odd/even and no of times each inputted no. occurs")
+print("Enter 10 nos.")
+list=[]
+for i in range(0,10):
+    app=int(input(""))
+    list.append(app)
+l=10
+n=0
+while(n<l):
+    count=1
+    k=n+1
+    while(k<l):
+        if(list[n]==list[k]):
+            count+=1
+            del list[k]
+            l=l-1
+        else:
+             k=k+1
+    print(list[n]," is present ",count,"times in the list.")
+    n=n+1
+for i in range(0,len(list)):
+    if(list[i]>0):
+        print("The number ",list[i]," is positive and ",end=" ")
+        if(list[i]%2==0):
+            print("even. ")
+        else:
+            print("odd. ")
+    elif(list[i]<0):
+        print("The number ",list[i]," is negative and ",end="")
+        if(list[i]%2==0):
+            print("even. ")
+        else:
+            print("odd. ")
+    else:
+        print("The number is neither positive nor negative.")
+
+
+
+print("################### Question 9 ##################")
+
+
+print("Enter the words in the list and when completed enter 'quit' to stop")
+list=[]
+app=""
+while(app!="quit"):
+    app=input("")
+    list.append(app)
+l=len(list)
+n=0
+while(n<l):
+    count=1
+    k=n+1
+    while(k<l):
+        if(list[n]==list[k]):
+            count+=1
+            del list[k]
+            l=l-1
+        else:
+             k=k+1
+    if(list[n]!="quit"):
+        print(list[n]," is present ",count,"times in the list.")
+    n=n+1
 
 
 
 
-#question-9---------------------------------------------------------------------------------------------------------------------------------------
-print("ANS.9")
-n=int(input("Number of words: "))
-li=[]
-for i in range(n):
-    word=input("Enter the word: ")
-    li.append(word)
-times={}
-for i in li :
-    if i not in times :
-        times[i]=1
-    else :
-        times[i]+=1
-print("Number of occurences: ",times)
+
+
