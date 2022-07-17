@@ -178,8 +178,8 @@ def bubble(arr):
                 arr[j]=temp
     return arr
 def binary(s,arr):
-    low=arr[0]
-    high=arr[len(arr)-1]
+    low=0
+    high=len(arr)-1
     while(low<=high):
         m=(high+low)//2
         if(s<arr[m]):
